@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/styles.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="jquery.fancybox.pack.js"></script>
+
+<title>Project & Code Examples</title>
+</head>
+<div id='cssmenu'>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="resume.html">Resume</a></li> 
+  <li><a href="course_history.html">Course History</a></li> 
+  <li><a href="code_examples.html">Projects & Code Examples</a></li>
+  <li><a href="contact.html">Contact</a></li> 
+</div>
+<body>
+<h1>Projects and Code Examples<h1>
+<hr>
+<h3>**Github account can be viewed <a href="https://github.com/mfmann">here</a></h3>
+<h2> Java </h2>
+	<li><a href="https://github.com/mfmann/File-Sync">File Sync</a>
+    <p>File Sync is distributed file synchronisation program that detects changes made on a source file and synchronise those changes
+on a destination file located on a different machine.</p>
+   </li>
+    
+	<li><a href="https://github.com/mfmann/Simple-Streamer">Simple Streamer</a></li>
+      <p>Simple Streamer is a simple streaming application that streams webcam images from one computer to another. A <a class="fancypdf" href="pdf/SimpleStreamer.pdf">report</a> analyzing the strengths and weakness of the program was also required. </p> 
+<h2> Ruby on Rails </h2>
+	<li> Image Majick </li>
+    <p>Image Majick is an online image editor which allows users to edit their images, apply filters to their images, create and save their own filters, and share their images with other users.</p>
+
+    
+    <li> Text Cypher</li>
+<h2> C# </h2>
+	<li><a href="https://github.com/mfmann/Ball-Fall">Ball Fall </a></li></li>
+     <p> Ball Fall is a game designed using the Sharpdx framework which is meant to be played on a Microsoft tablet. </p>
+     
+<h2> SQL </h2>
+	<li><a class="fancypdf" href="/pdf/MannSQLAssignment.pdf">SQL Assignment</a></li>
+    <p> This assignment invloved receiving a entity-relationship diagram of a relational database and writing SQL queries in order to find specific information. </p>
+    
+<h2> Database Design </h2>
+	<li><a class="fancypdf" href="/pdf/DatabaseDesingProject.pdf">Database Design Project</a></li>
+    <p> This project involved desigining a normalised, logical data model and a data dictionary for a relational database used to store information about an academic journal. </p>
+
+
+<h2> UML</h2>
+<li><a class="fancypdf" href="/pdf/ImageMajickDesigns.pdf">Image Majick Design </a></li>
+  <p> This is the premlinanry design for the Image Majick Rails project listed above. Use cases, a componenet diagram, and detailed sequence diagrams are included that illustrate interactions in the Rails MVC software pattern.</p>
+</body>
+
+
+<script type="text/javascript">
+$(".fancypdf").click(function(){
+	$.fancybox({
+   		type: 'html',
+   		autoSize: false,
+		'width': 1200,
+		'height': '1000',
+   		content: '<embed src="'+this.href+		'#nameddest=self&page=1&view=FitH,0&zoom=80,0,0" type="application/pdf" height="99%" width="99%" />',
+   		beforeClose: function() {
+     	$(".fancybox-inner").unwrap();
+  	 	}
+ 	}); //fancybox
+ return false;
+}); //click
+</script>
+      
+
+</html>
